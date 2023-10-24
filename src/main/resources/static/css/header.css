@@ -1,0 +1,41 @@
+
+.head {
+
+    /*opacity: 30%;*/
+    /*filter: blur(4px);*/
+}
+
+.menu-elem {
+    height: 35px;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 75px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.logo-img {
+    height: 50px;
+    margin-top: 10px;
+}
+.logo-text {
+    margin-top: 45px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+.navigation {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 235px;
+    width: 50px;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+
+.img-navigation {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -33px;
+}

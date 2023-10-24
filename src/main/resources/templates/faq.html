@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link href="lib/bootstrap-5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+    >
+    <link href="css/header.css" rel="stylesheet" >
+    <link href="css/body.css" rel="stylesheet" >
+    <script
+            src="lib/bootstrap-5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+</head>
+<body class="body-main">
+<div th:insert="~{faq_elem/header :: header}"></div>
+<div class="row content-container" >
+
+    <div class="accordion shadow-lg mt-5" id="accordionExample">
+
+        <div th:insert="~{faq_elem/elem_0 :: elem_0}"/>
+        <div th:insert="~{faq_elem/elem_1 :: elem_1}"/>
+        <div th:insert="~{faq_elem/elem_2 :: elem_2}"/>
+
+    </div>
+
+</div>
+</body>
+</html>
