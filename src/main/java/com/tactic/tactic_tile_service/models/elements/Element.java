@@ -1,11 +1,12 @@
 package com.tactic.tactic_tile_service.models.elements;
 
 import com.tactic.tactic_tile_service.services.configurator.Configurator;
+import com.tactic.tactic_tile_service.services.tile_counter.TileCounter;
 
 import java.util.HashMap;
 import java.util.Objects;
 
-public class Element implements Configurator {
+public class Element implements Configurator, TileCounter {
     private TypeElement typeElement;
     private HashMap<String,String> identification;
     private HashMap<String,String> settings;

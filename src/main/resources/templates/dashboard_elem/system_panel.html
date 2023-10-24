@@ -1,0 +1,20 @@
+<div th:fragment="system_panel">
+    <div >
+        <div class="card  rounded-3 shadow-lg panel border border-warning" >
+            <div class="card-header text-center shadow-sm">
+                <h4 class="text-light ">Системная информация</h4>
+            </div>
+            <br>
+            <div class="card-body">
+                <p class="text-light"><span class="text-warning">Логирование:</span>                      <span th:text="${el.identification[imei]}"></span></p>
+                <p class="text-light"><span class="text-warning">Принты:</span>                        <span th:text="${el.settings[ip]}"></span></p>
+                <p class="text-light"><span class="text-warning">Интеграция:</span>                      <span th:text="${el.settings[port]}"></span></p>
+
+                <p class="text-light"><span class="text-warning">Терминальный режим:</span>      <span th:text="${el.settings[server_ip_cn]}"></span></p>
+                <p class="text-light"><span class="text-warning">Язык:</span>    <span th:text="${el.settings[server_port_cn]}"></span></p>
+
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

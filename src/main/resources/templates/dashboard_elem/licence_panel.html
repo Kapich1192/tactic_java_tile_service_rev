@@ -1,14 +1,14 @@
 <div th:fragment="licence_panel">
-    <div class="card  rounded-3 shadow-lg">
+    <div class="card  rounded-3 shadow-lg panel border border-warning">
         <div class="card-header text-center shadow-sm">
-            <h5 class="text-dark ">Информация о лицензии</h5>
+            <h4 class="text-light ">Информация о лицензии</h4>
         </div>
         <br>
         <div class="card-body">
 
-            <p>IMEI устройства:              <span th:text="${imei}"></span></p>
-            <p>Лицензия:                     <span th:text="${licence}"></span></p>
-            <p>Срок:                         <span>--.--.----</span></p>
+            <p><span class="text-warning">IMEI устройства:</span>              <span th:text="${imei}"></span></p>
+            <p><span class="text-warning">Лицензия:</span>                     <span th:text="${licence}"></span></p>
+            <p><span class="text-warning">Срок:</span>                         <span class="text-light">--.--.----</span></p>
             <br>
         </div>
     </div>

@@ -1,33 +1,34 @@
 <div th:fragment="zoom_monitor">
     <div class="container">
-        <div class="card rounded-3 shadow-lg ">
+        <div class="card rounded-3 shadow-lg panel border border-warning">
 
-            <div class="card-header shadow-sm">
-                Информация по скачанным зумам
+            <div class="card-header text-center shadow-sm">
+                <h4 class="text-light ">Информация по скачанным зумам</h4>
             </div>
 
             <div class="card-body">
                 <div class="row">
-                    <p class="col-3">1 - <span th:text="${zoom.n1}"></span></p>
-                    <p class="col-3">2 - <span th:text="${zoom.n2}"></span></p>
-                    <p class="col-3">3 - <span th:text="${zoom.n3}"></span></p>
-                    <p class="col-3">4 - <span th:text="${zoom.n4}"></span></p>
-                    <p class="col-3">5 - <span th:text="${zoom.n5}"></span></p>
-                    <p class="col-3">6 - <span th:text="${zoom.n6}"></span></p>
-                    <p class="col-3">7 - <span th:text="${zoom.n7}"></span></p>
-                    <p class="col-3">8 - <span th:text="${zoom.n8}"></span></p>
-                    <p class="col-3">9 - <span th:text="${zoom.n9}"></span></p>
-                    <p class="col-3">10 - <span th:text="${zoom.n10}"></span></p>
-                    <p class="col-3">11 - <span th:text="${zoom.n11}"></span></p>
-                    <p class="col-3">12 - <span th:text="${zoom.n12}"></span></p>
-                    <p class="col-3">13 - <span th:text="${zoom.n13}"></span></p>
-                    <p class="col-3">14 - <span th:text="${zoom.n14}"></span></p>
-                    <p class="col-3">15 - <span th:text="${zoom.n15}"></span></p>
-                    <p class="col-3">16 - <span th:text="${zoom.n16}"></span></p>
-                    <p class="col-3">17 - <span th:text="${zoom.n17}"></span></p>
-                    <p class="col-3">18 - <span th:text="${zoom.n18}"></span></p>
-                    <p class="col-3">19 - <span th:text="${zoom.n19}"></span></p>
-                    <p class="col-3">20 - <span th:text="${zoom.n20}"></span></p>
+                    <p class="col-3"><span class="text-warning">1 : </span><span class="text-light" th:text="${zoom.n1}"></span></p>
+                    <p class="col-3"><span class="text-warning">2 : </span><span class="text-light" th:text="${zoom.n2}"></span></p>
+                    <p class="col-3"><span class="text-warning">3 : </span><span class="text-light" th:text="${zoom.n3}"></span></p>
+                    <p class="col-3"><span class="text-warning">4 : </span><span class="text-light" th:text="${zoom.n4}"></span></p>
+                    <p class="col-3"><span class="text-warning">5 : </span><span class="text-light" th:text="${zoom.n5}"></span></p>
+                    <p class="col-3"><span class="text-warning">6 : </span><span class="text-light" th:text="${zoom.n6}"></span></p>
+                    <p class="col-3"><span class="text-warning">7 : </span><span class="text-light" th:text="${zoom.n7}"></span></p>
+                    <p class="col-3"><span class="text-warning">8 : </span><span class="text-light" th:text="${zoom.n8}"></span></p>
+                    <p class="col-3"><span class="text-warning">9 : </span><span class="text-light" th:text="${zoom.n9}"></span></p>
+                    <p class="col-3"><span class="text-warning">10 : </span><span class="text-light" th:text="${zoom.n10}"></span></p>
+                    <p class="col-3"><span class="text-warning">11 : </span><span class="text-light" th:text="${zoom.n11}"></span></p>
+                    <p class="col-3"><span class="text-warning">12 : </span><span class="text-light" th:text="${zoom.n12}"></span></p>
+                    <p class="col-3"><span class="text-warning">13 : </span><span class="text-light" th:text="${zoom.n13}"></span></p>
+                    <p class="col-3"><span class="text-warning">14 : </span><span class="text-light" th:text="${zoom.n14}"></span></p>
+                    <p class="col-3"><span class="text-warning">15 : </span><span class="text-light" th:text="${zoom.n15}"></span></p>
+                    <p class="col-3"><span class="text-warning">16 : </span><span class="text-light" th:text="${zoom.n16}"></span></p>
+                    <p class="col-3"><span class="text-warning">17 : </span><span class="text-light" th:text="${zoom.n17}"></span></p>
+                    <p class="col-3"><span class="text-warning">18 : </span><span class="text-light" th:text="${zoom.n18}"></span></p>
+                    <p class="col-3"><span class="text-warning">19 : </span><span class="text-light" th:text="${zoom.n19}"></span></p>
+                    <p class="col-3"><span class="text-warning">20 : </span><span class="text-light" th:text="${zoom.n20}"></span></p>
+                    <button class="col-3 btn btn-warning rounded-4 ms-3 mt-2">Пересчитать</button>
 
                 </div>
             </div>
