@@ -1,6 +1,6 @@
-package com.tactic.tactic_tile_service.service.prints;
+package com.tactic.tactic_tile_service.services.prints;
 
-import com.tactic.tactic_tile_service.service.prints.printsFactory.PrintsFactory;
+import com.tactic.tactic_tile_service.services.prints.printsFactory.PrintsFactory;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;

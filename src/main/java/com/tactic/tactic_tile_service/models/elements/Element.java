@@ -1,9 +1,11 @@
 package com.tactic.tactic_tile_service.models.elements;
 
+import com.tactic.tactic_tile_service.services.configurator.Configurator;
+
 import java.util.HashMap;
 import java.util.Objects;
 
-public class Element {
+public class Element implements Configurator {
     private TypeElement typeElement;
     private HashMap<String,String> identification;
     private HashMap<String,String> settings;
@@ -17,26 +19,31 @@ public class Element {
     }
 
     public void initialize() {
-        typeElement = TypeElement.TILE_SERVICE;
-        identification = new HashMap<>() {{
-            put("id","1");
-            put("imei","tile_service_1");
-        }};
-        settings = new HashMap<>() {{
-            put("ip","localhost");
-            put("port","8090");
-            put("source_saver","tiles/");
-            put("source_downloader","tiles/");
-            put("integration","false");
-            put("server_ip_cn","localhost");
-            put("server_port_cn","8082");
-            put("print_monitoring","false");
-            put("print_downloader","false");
-            put("print_system","false");
-            put("logger","false");
-            put("terminal_mode","false");
-            put("lang","RU");
-        }};
+        if(!loadConfigure()) {
+            typeElement = TypeElement.TILE_SERVICE;
+            identification = new HashMap<>() {{
+                put("id","1");
+                put("imei","tile_service_1");
+            }};
+            settings = new HashMap<>() {{
+                put("ip","localhost");
+                put("port","8090");
+                put("path_saver","tiles");
+                put("path_downloader","tiles");
+                put("integration","false");
+                put("server_ip_cn","localhost");
+                put("server_port_cn","8082");
+                put("print_monitoring","false");
+                put("print_downloader","false");
+                put("print_system","false");
+                put("logger","false");
+                put("terminal_mode","false");
+                put("lang","RU");
+                put("tile_server","true");
+            }};
+            initConfigure();
+        }
+
     }
 
     public TypeElement getTypeElement() {

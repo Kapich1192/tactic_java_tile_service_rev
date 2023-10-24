@@ -1,4 +1,4 @@
-package com.tactic.tactic_tile_service.service.tile_service;
+package com.tactic.tactic_tile_service.services.tile_service;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Scanner;
 
 public interface TileSaver {
     default void saveTiles(int zoom, String[] leftUp, String[] rightDown) {

@@ -1,0 +1,23 @@
+{
+  "typeElement" : "TILE_SERVICE",
+  "identification" : {
+    "imei" : "tile_service_1",
+    "id" : "1"
+  },
+  "settings" : {
+    "path_saver" : "tiles",
+    "ip" : "localhost",
+    "logger" : "false",
+    "print_system" : "false",
+    "server_port_cn" : "8082",
+    "path_downloader" : "tiles",
+    "port" : "8090",
+    "print_downloader" : "false",
+    "print_monitoring" : "false",
+    "integration" : "false",
+    "server_ip_cn" : "localhost",
+    "terminal_mode" : "false",
+    "lang" : "RU",
+    "tile_server" : "true"
+  }
+}

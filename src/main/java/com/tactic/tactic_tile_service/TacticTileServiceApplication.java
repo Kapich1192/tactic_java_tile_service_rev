@@ -13,7 +13,10 @@ public class TacticTileServiceApplication {
 		thisElement = new Element();
 		thisElement.initialize();
 
-		SpringApplication.run(TacticTileServiceApplication.class, args);
+		String[] settings = new String[1];
+		settings[0] = "--server.port=" + thisElement.getSettings().getOrDefault("port","8099");
+
+		SpringApplication.run(TacticTileServiceApplication.class, settings);
 	}
 
 }
