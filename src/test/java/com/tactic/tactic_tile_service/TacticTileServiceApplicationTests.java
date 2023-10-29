@@ -6,8 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class TacticTileServiceApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    public void test1() {
+
+    }
 
 }
